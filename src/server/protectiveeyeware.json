@@ -2,21 +2,25 @@
   {
     "img": "/src/assets/PROTECTIVE EYEWARE/1.png",
     "name": "Safety Glasses",
-    "price": "$39.95"
+    "price": "$39.95",
+    "category": ["Square", "Sport"]
   },
   {
     "img": "/src/assets/PROTECTIVE EYEWARE/2.png",
     "name": "Protective Glasses",
-    "price": "$27.95"
+    "price": "$27.95",
+    "category": ["Square"]
   },
   {
     "img": "/src/assets/PROTECTIVE EYEWARE/3.png",
     "name": "Sports Protective Goggles",
-    "price": "$45.95"
+    "price": "$45.95",
+    "category": ["Square", "Sport"]
   },
   {
     "img": "/src/assets/PROTECTIVE EYEWARE/4.png",
     "name": "Protective Goggles",
-    "price": "$9.95"
+    "price": "$9.95",
+    "category": ["Square", "Sport"]
   }
 ]

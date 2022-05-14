@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Sunglasses",
+    "img": "/src/assets/sunglasses/sun1.png"
+  },
+  {
+    "name": "Aviator",
+    "img": "/src/assets/sunglasses/sun4.png"
+  },
+  {
+    "name": "Square",
+    "img": "/src/assets/sunglasses/sun3.png"
+  },
+  {
+    "name": "CatEye",
+    "img": "/src/assets/PRESCRIPTION FRAMES/3.png"
+  },
+  {
+    "name": "Rimless",
+    "img": "/src/assets/PRESCRIPTION FRAMES/4.png"
+  },
+  {
+    "name": "Sport",
+    "img": "/src/assets/PROTECTIVE EYEWARE/3.png"
+  }
+]

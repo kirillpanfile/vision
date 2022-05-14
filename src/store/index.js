@@ -5,6 +5,7 @@ const store = createStore({
     sunglasses: [],
     prescriptionframes: [],
     protectiveeyeware: [],
+    categories: [],
   },
   mutations: {
     setSunglasses(state, sunglasses) {
@@ -15,6 +16,9 @@ const store = createStore({
     },
     setProtectiveeyeware(state, protectiveeyeware) {
       state.protectiveeyeware = protectiveeyeware;
+    },
+    setCategories(state, categories) {
+      state.categories = categories;
     },
   },
   actions: {
@@ -28,6 +32,9 @@ const store = createStore({
       const pro = await fetch("/api/protectiveeyeware");
       const proEyewear = await pro.json();
       commit("setProtectiveeyeware", proEyewear);
+      const cat = await fetch("/api/categories");
+      const categories = await cat.json();
+      commit("setCategories", categories);
     },
   },
   getters: {
@@ -39,6 +46,9 @@ const store = createStore({
     },
     protectiveeyeware(state) {
       return state.protectiveeyeware;
+    },
+    categories(state) {
+      return state.categories;
     },
   },
 });

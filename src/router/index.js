@@ -8,6 +8,7 @@ import Faq from "../views/Faq.vue";
 import Location from "../views/Location.vue";
 import Profile from "../views/Profile.vue";
 import Cart from "../views/Cart.vue";
+import CategoryList from "../views/CategoryList.vue";
 const router = new createRouter({
   mode: "history",
   routes: [
@@ -20,6 +21,11 @@ const router = new createRouter({
       path: "/category",
       name: "category",
       component: Category,
+    },
+    {
+      path: "/custom/:id",
+      name: "custom",
+      component: CategoryList,
     },
     {
       path: "/faq",

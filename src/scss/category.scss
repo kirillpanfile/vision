@@ -1,0 +1,35 @@
+.categories {
+  // .categories__container
+
+  &__container {
+  }
+
+  // .categories__wrapper
+
+  &__wrapper {
+  }
+
+  // .categories__wrapper-title
+
+  &__wrapper-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+    margin-top: 46px;
+  }
+
+  // .categories__row
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

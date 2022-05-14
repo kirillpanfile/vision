@@ -2,21 +2,25 @@
   {
     "img": "/src/assets/PRESCRIPTION FRAMES/1.png",
     "name": "Square Glasses",
-    "price": "$23.95"
+    "price": "$23.95",
+    "category": ["Square"]
   },
   {
     "img": "/src/assets/PRESCRIPTION FRAMES/2.png",
     "name": "Aviator Glasses",
-    "price": "$32.95"
+    "price": "$32.95",
+    "category": ["Aviator", "Rimless"]
   },
   {
     "img": "/src/assets/PRESCRIPTION FRAMES/3.png",
     "name": " Cat Eye Glasses",
-    "price": "$23.95"
+    "price": "$23.95",
+    "category": ["CatEye"]
   },
   {
     "img": "/src/assets/PRESCRIPTION FRAMES/4.png",
     "name": "Rimless Glasses",
-    "price": "$35.95"
+    "price": "$35.95",
+    "category": ["Rimless"]
   }
 ]

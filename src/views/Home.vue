@@ -86,7 +86,6 @@ export default {
     }),
   },
   mounted() {
-    console.log(this.sunglasses);
     this.autoPlay();
   },
   data() {

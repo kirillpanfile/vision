@@ -90,6 +90,7 @@
   background: #010101;
   color: $white;
   padding: 10px;
+  font-size: rem(13);
   @media (max-width: $mobile) {
     padding: 4px;
     font-size: rem(10);

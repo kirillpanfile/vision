@@ -2,6 +2,7 @@ import { Server } from "miragejs";
 import sunglasses from "./sunglasses.json";
 import prescriptionframes from "./prescriptionframes.json";
 import protectiveeyeware from "./protectiveeyeware.json";
+import categories from "./categories.json";
 export default {
   install: () => {
     new Server({
@@ -10,6 +11,7 @@ export default {
           SUNGLASSES: sunglasses,
           PRESCRIPTIONFRAMES: prescriptionframes,
           PROTECTIVEEYEWEAR: protectiveeyeware,
+          CATEGORIES: categories,
         });
       },
       routes() {
@@ -20,6 +22,7 @@ export default {
           (schema) => schema.db.PRESCRIPTIONFRAMES
         );
         this.get("/protectiveeyeware", (schema) => schema.db.PROTECTIVEEYEWEAR);
+        this.get("/categories", (schema) => schema.db.CATEGORIES);
       },
     });
   },
