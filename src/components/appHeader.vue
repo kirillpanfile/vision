@@ -6,7 +6,14 @@
           <img src="../assets/logo.png" alt="" />
           <span>VISION</span>
         </div>
-        <div class="header__wrapper-menu">
+        <button
+          @click="menuActive = !menuActive"
+          class="icon-menu"
+          :class="{ menuopen: menuActive }"
+        >
+          <span></span><span></span><span></span><span></span>
+        </button>
+        <div class="header__wrapper-menu" :class="{ mobile: menuActive }">
           <div class="header__wrapper-menu-item">
             <router-link to="/">Home</router-link>
           </div>
@@ -38,6 +45,20 @@
 <script>
 export default {
   name: "app-header",
+  data() {
+    return {
+      menuActive: false,
+    };
+  },
+  watch: {
+    menuActive(val) {
+      if (val) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+    },
+  },
 };
 </script>
 

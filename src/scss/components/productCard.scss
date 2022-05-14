@@ -4,20 +4,23 @@
   &__card {
     background: #fffefe;
     box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
-    width: 270px;
-    height: 370px;
     position: relative;
-    @include adaptiveValue("width", 270, 200);
+    @include adaptiveValue("width", 270, 160);
+    @include adaptiveValue("height", 370, 280);
   }
 
   // .product__card-image
 
   &__card-image {
     height: 170px;
-    display: block;
+    position: relative;
+    @media (max-width: $mobile) {
+      height: 120px;
+    }
     img {
-      top: -50%;
-      transform: translateY(50%);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       width: 100%;
       //   height: 170px;
       object-fit: contain;
@@ -34,6 +37,10 @@
     align-items: center;
     text-align: center;
     margin-top: 40px;
+    @media (max-width: $mobile) {
+      margin-top: 0px;
+      font-size: rem(14);
+    }
   }
 
   // .product__card-price
@@ -75,11 +82,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: $mobile) {
+    height: 30px;
+  }
 }
 .product-bottom-cart {
   background: #010101;
   color: $white;
   padding: 10px;
+  @media (max-width: $mobile) {
+    padding: 4px;
+    font-size: rem(10);
+    height: 30px;
+    position: relative;
+    img {
+      width: 18px;
+      margin-right: 2px;
+    }
+  }
   display: flex;
   align-items: center;
 }

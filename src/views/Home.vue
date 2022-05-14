@@ -87,6 +87,7 @@ export default {
   },
   mounted() {
     console.log(this.sunglasses);
+    this.autoPlay();
   },
   data() {
     return {
@@ -111,6 +112,11 @@ export default {
 
       if (this.visibleSlide <= 0) this.visibleSlide = this.slides.length - 1;
       else this.visibleSlide--;
+    },
+    autoPlay() {
+      setInterval(() => {
+        this.next();
+      }, 4000);
     },
     changeSlideByDot(index) {
       if (index > this.visibleSlide) {
