@@ -36,14 +36,19 @@
       ></div>
     </div>
   </app-slider>
+  <appProductContainer>
+    <app-product :img="img" :name="name" :price="price"> </app-product>
+  </appProductContainer>
 </template>
 
 <script>
 import appSlide from "../components/appSlide.vue";
+import appProductContainer from "../components/appProductContainer.vue";
 export default {
   name: "Home",
   components: {
     appSlide,
+    appProductContainer,
   },
   data() {
     return {

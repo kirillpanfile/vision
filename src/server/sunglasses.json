@@ -1,0 +1,22 @@
+[
+  {
+    "img": "/src/assets/sunglasses/sun1.png",
+    "name": "Premium Square Sunglasses ",
+    "preice": "$32.95"
+  },
+  {
+    "img": "/src/assets/sunglasses/sun2.png",
+    "name": "Premium Cat-Eye Sunglasses",
+    "price": "$39.95"
+  },
+  {
+    "img": "/src/assets/sunglasses/sun3.png",
+    "name": "Premium Tint Sunglasses ",
+    "price": "$29.95"
+  },
+  {
+    "img": "/src/assets/sunglasses/sun4.png",
+    "name": "Premium Aviator Sunglasses ",
+    "price": "$39.95"
+  }
+]

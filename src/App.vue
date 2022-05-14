@@ -7,6 +7,10 @@
 <script>
 export default {
   name: "App",
+  mounted() {
+    this.$store.dispatch("fetchSunglasses");
+    console.log(this.$store.state.SUNGLASSES);
+  },
 };
 </script>
 
