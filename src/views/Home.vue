@@ -46,6 +46,26 @@
     >
     </app-product>
   </appProductContainer>
+  <appProductContainer name="PRESCRIPTION FRAMES">
+    <app-product
+      v-for="(item, index) in prescriptionframes"
+      :key="index"
+      :img="item.img"
+      :name="item.name"
+      :price="item.price"
+    >
+    </app-product>
+  </appProductContainer>
+  <appProductContainer name="PROTECTIVE EYEWARE">
+    <app-product
+      v-for="(item, index) in protectiveeyeware"
+      :key="index"
+      :img="item.img"
+      :name="item.name"
+      :price="item.price"
+    >
+    </app-product>
+  </appProductContainer>
 </template>
 
 <script>
@@ -61,6 +81,8 @@ export default {
   computed: {
     ...mapState({
       sunglasses: (state) => state.sunglasses,
+      protectiveeyeware: (state) => state.protectiveeyeware,
+      prescriptionframes: (state) => state.prescriptionframes,
     }),
   },
   mounted() {
