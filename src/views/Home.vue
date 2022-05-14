@@ -36,19 +36,35 @@
       ></div>
     </div>
   </app-slider>
-  <appProductContainer>
-    <app-product :img="img" :name="name" :price="price"> </app-product>
+  <appProductContainer name="SUNGLASSES">
+    <app-product
+      v-for="(item, index) in sunglasses"
+      :key="index"
+      :img="item.img"
+      :name="item.name"
+      :price="item.price"
+    >
+    </app-product>
   </appProductContainer>
 </template>
 
 <script>
 import appSlide from "../components/appSlide.vue";
 import appProductContainer from "../components/appProductContainer.vue";
+import { mapState } from "vuex";
 export default {
   name: "Home",
   components: {
     appSlide,
     appProductContainer,
+  },
+  computed: {
+    ...mapState({
+      sunglasses: (state) => state.sunglasses,
+    }),
+  },
+  mounted() {
+    console.log(this.sunglasses);
   },
   data() {
     return {
