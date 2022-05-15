@@ -47,6 +47,11 @@ const router = new createRouter({
       name: "cart",
       component: Cart,
     },
+    {
+      path: "/product/:id",
+      name: "product",
+      component: () => import("../views/Product.vue"),
+    },
   ],
   scrollBehavior: () => ({ y: 0 }),
   history: createWebHashHistory(),

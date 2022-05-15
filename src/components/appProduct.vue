@@ -1,14 +1,26 @@
 <template>
   <div class="product__card">
-    <div class="product__card-image">
-      <img :src="img" alt="" />
-    </div>
-    <div class="product__card-name">
-      {{ name }}
-    </div>
-    <div class="product__card-price">
-      {{ price }}
-    </div>
+    <router-link
+      :to="{
+        path: '/product/' + name,
+        query: {
+          name: name,
+          price: price,
+        },
+      }"
+    >
+      <div class="product__card-top">
+        <div class="product__card-image">
+          <img :src="img" alt="" />
+        </div>
+        <div class="product__card-name">
+          {{ name }}
+        </div>
+        <div class="product__card-price">
+          {{ price }}
+        </div>
+      </div>
+    </router-link>
     <div class="product__card-bottom product-bottom">
       <div class="product-bottom__group">
         <div class="product-bottom-heart">
@@ -29,6 +41,7 @@ export default {
     img: String,
     name: String,
     price: String,
+    id: String,
   },
 };
 </script>
