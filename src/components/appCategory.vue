@@ -27,40 +27,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.category {
-  // .category__item
-
-  &__item {
-    width: 500px;
-    height: 200px;
-    padding: 19px 12px;
-    background: #fffefe;
-    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 36px;
-    display: flex;
-    align-items: center;
-  }
-
-  // .category__inner
-
-  &__inner {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  // .category__title
-
-  &__title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-right: 16px;
-  }
-}
-</style>
+<style lang="scss" scoped></style>
