@@ -15,9 +15,11 @@
           <div class="product__add-to-cart">
             <div class="product__add-to-cart-inner">
               <div class="product__add-to-cart-count">
-                <button>+</button>
-                <input type="number" />
-                <button>-</button>
+                <button @click="count++">+</button>
+                <input v-model="count" min="0" type="number" />
+                <button @click="count > 0 ? count-- : (count = count)">
+                  -
+                </button>
               </div>
               <div class="product__add-to-cart-heart">
                 <img src="/src/assets/icons/heart.png" alt="" />
@@ -91,6 +93,11 @@
 <script>
 import { mapState } from "vuex";
 export default {
+  data() {
+    return {
+      count: 1,
+    };
+  },
   computed: {
     ...mapState({
       sunglasses: (state) => state.sunglasses,
@@ -105,7 +112,7 @@ export default {
           this.prescriptionframes,
         ]
           .flat()
-          .find((item) => item.name.includes(this.$route.params.id));
+          .find((item) => item.name === this.$route.params.id);
       } catch (err) {}
     },
   },

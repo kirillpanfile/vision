@@ -52,6 +52,11 @@ const router = new createRouter({
       name: "product",
       component: () => import("../views/Product.vue"),
     },
+    {
+      path: "/register",
+      name: "register",
+      component: () => import("../views/Register.vue"),
+    },
   ],
   scrollBehavior: () => ({ y: 0 }),
   history: createWebHashHistory(),

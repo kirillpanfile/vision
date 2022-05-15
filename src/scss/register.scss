@@ -1,0 +1,99 @@
+.register {
+  // .register__container
+
+  &__container {
+    display: flex;
+    max-width: 1035px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  // .register__left
+
+  &__left {
+    padding: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+
+  // .register__form
+
+  &__form {
+  }
+  &__button {
+    background: linear-gradient(269.46deg, #a36da2 0.24%, #59a0c5 96.9%);
+    box-shadow: 0px 10px 20px rgba(86, 196, 249, 0.3);
+    border-radius: 15px;
+    color: $white;
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  // .register__form-group
+
+  &__form-group {
+    // width: 400px;
+    @include adaptiveValue("width", 400, 200);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 12px;
+    label {
+      display: block;
+      width: 120px;
+      text-align: right;
+    }
+  }
+
+  // .register__form-input
+
+  &__form-input {
+    border-bottom: 1px solid #1687f7;
+    margin-top: 20px;
+    text-align: left;
+    color: #1687f7;
+    // width: 315px;
+    width: 100%;
+  }
+
+  // .register__right
+
+  &__right {
+    width: 50%;
+    background: linear-gradient(180deg, #af659c 0%, #53a4c8 100%);
+    border-radius: 0px 10px 10px 0px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+}
+.register-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 20px;
+}
+
+.register {
+  // .register__login
+
+  &__login {
+    margin-top: 30px;
+    span {
+      color: #1687f7;
+    }
+  }
+}
