@@ -1,0 +1,39 @@
+.faq {
+  // .faq__section
+
+  &__section {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  // .faq__section-title
+
+  &__section-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    text-decoration-line: underline;
+  }
+}
+.section-quest {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 24px;
+}
+.section-ans {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 24px;
+}
+
+.faq-cash {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
