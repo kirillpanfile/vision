@@ -23,8 +23,13 @@
     </router-link>
     <div class="product__card-bottom product-bottom">
       <div class="product-bottom__group">
-        <div class="product-bottom-heart">
-          <img src="/src/assets/icons/heart.png" alt="" />
+        <div @click="isFavorite = !isFavorite" class="product-bottom-heart">
+          <img
+            v-if="isFavorite == false"
+            src="/src/assets/icons/heart.png"
+            alt=""
+          />
+          <img v-else src="/src/assets/icons/heart-solid.png" alt="" />
         </div>
         <div class="product-bottom-cart">
           <img src="/src/assets/icons/cart-white.svg" alt="" /> ADD TO CART
@@ -42,6 +47,11 @@ export default {
     name: String,
     price: String,
     id: String,
+  },
+  data() {
+    return {
+      isFavorite: false,
+    };
   },
 };
 </script>
